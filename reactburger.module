@@ -24,7 +24,6 @@ function reactburger_block_info() {
 function reactburger_block_view($delta = '') {
 
   if ($delta == "reactburger") {
-    // This example is adapted from node.module.
     $block = array();
 
     $salad = 'greek salad';
@@ -41,12 +40,12 @@ function reactburger_block_view($delta = '') {
     }
 
     drupal_add_js(array(
-        'reactburger' => array(
-          'salad' => $salad,
-          'meat' => $meat,
-          'sauce' => $sauce
-        )
-      ), array('type' => 'setting'));
+      'reactburger' => array(
+        'salad' => $salad,
+        'meat' => $meat,
+        'sauce' => $sauce
+      )
+    ), array('type' => 'setting'));
 
     drupal_add_js(drupal_get_path('module', 'reactburger') . '/build/reactburger.js', 'file');
 
