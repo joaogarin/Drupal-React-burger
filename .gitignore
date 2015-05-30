@@ -1,0 +1,3 @@
+# Ignore paths that contain packages from pakaage managers
+bower_components
+node_modules

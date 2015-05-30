@@ -1,0 +1,20 @@
+{
+  "name": "reactburger",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joaogarin/Drupal-React-burger",
+  "authors": [
+    "joaogarin <joao.garin@gmail.com>"
+  ],
+  "description": "a react component for drupal",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}

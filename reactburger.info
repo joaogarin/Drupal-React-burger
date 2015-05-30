@@ -10,3 +10,5 @@ core = "7.x"
 project = "reactburger"
 datestamp = "1403010228"
 
+; Stylesheets
+scripts[] = bower_components/react/react.min.js

@@ -48,7 +48,6 @@ function reactburger_block_view($delta = '') {
         )
       ), array('type' => 'setting'));
 
-    drupal_add_js(drupal_get_path('module', 'reactburger') . '/js/react.js', 'file');
     drupal_add_js(drupal_get_path('module', 'reactburger') . '/build/reactburger.js', 'file');
 
     return $block;
