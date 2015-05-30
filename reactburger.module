@@ -1,0 +1,57 @@
+<?php
+/*
+ * @file
+ * React burger
+ *
+ * Introduces a react component for composing a burger
+ */
+
+/*
+ * Implements hook_block_info()
+ */
+function reactburger_block_info() {
+// This example comes from node.module.
+  $blocks['reactburger'] = array(
+    'info' => t('Drupal react burger'),
+  );
+
+  return $blocks;
+}
+
+/*
+ * Implements hook_block_view()
+ */
+function reactburger_block_view($delta = '') {
+
+  if ($delta == "reactburger") {
+    // This example is adapted from node.module.
+    $block = array();
+
+    $salad = 'greek salad';
+    $sauce = 'chili yogurt';
+    $meat = 'meat balls';
+
+    switch ($delta) {
+      case 'reactburger':
+        $block['subject'] = t('React burger');
+        $block['content'] = array(
+          '#markup' => '<div id="burger_content"></div>'
+        );
+        break;
+    }
+
+    drupal_add_js(array(
+        'reactburger' => array(
+          'salad' => $salad,
+          'meat' => $meat,
+          'sauce' => $sauce
+        )
+      ), array('type' => 'setting'));
+
+    drupal_add_js(drupal_get_path('module', 'reactburger') . '/js/react.js', 'file');
+    drupal_add_js(drupal_get_path('module', 'reactburger') . '/build/reactburger.js', 'file');
+
+    return $block;
+
+  }
+}

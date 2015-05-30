@@ -1,0 +1,12 @@
+name = React Burger
+description = Creates a react burger component
+package = React
+version = VERSION
+core = 7.x
+
+; Information added by Drupal.org packaging script on 2014-06-17
+version = "7.x-1.9"
+core = "7.x"
+project = "reactburger"
+datestamp = "1403010228"
+

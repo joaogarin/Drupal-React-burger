@@ -1,0 +1,14 @@
+{
+  "name": "reactburger",
+  "version": "1.0.0",
+  "description": "React burger component for drupal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "joaogarin",
+  "license": "ISC",
+  "devDependencies": {
+    "react-tools": "^0.13.3"
+  }
+}
